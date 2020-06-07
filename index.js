@@ -40,11 +40,11 @@ async function setActivity() {
 				process.exit()
 			}
 			else if (e.includes(`{"reason":"notFound"}`)) { // If the tag is invalid
-				console.error(chalk.hex("#FF6347")(`That is not a valid Tag! Please check if it is correct!`))
+				console.error(chalk.hex("#FF6347")(`${config.tag} is not a valid Tag! Please check if it is correct!`))
 				process.exit()
 			}
 			else { // If it is an error inside the code
-				console.error(chalk.hex("#FF6347")(`Uh oh! There was an error. Please report this in the Issues Page of the Github\n\n${e}`))
+				console.error(chalk.hex("#FF6347")(`Uh oh! There was an error. Please report this at https://github.com/ThatMajesticGuy/Brawl-Stars-Discord-RPC/issues\n\n${e}`))
 				process.exit()
 			}
 		}
