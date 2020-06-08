@@ -98,7 +98,7 @@ bot.on("ready",function(){
 		process.exit()
 	}
 setActivity()
-console.log(chalk.hex("#7CFC00")("Discord RPC is ready!")) // Notify that it si working
+console.log(chalk.hex("#7CFC00")("Discord RPC is ready!")) // Notify that it is working
 setInterval(() => {
     setActivity();
   }, 60000);
